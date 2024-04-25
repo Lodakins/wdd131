@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    color: #fff;
+}
+header{
+    background-color: #363636;
+    padding: 50px;
+}
+nav{
+    background: #252525;
+    padding: 30px;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+ul li{
+    list-style: none;
+}
+.main-body{
+    height: 310px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    color:#333333;
+}
+main{
+    background-color: #cccccc;
+}
+aside{
+    background-color: #fff;
+}
+footer{
+    background-color: #333333;
+    padding: 50px;
+}
