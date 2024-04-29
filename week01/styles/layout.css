@@ -14,7 +14,7 @@ nav{
     background: #252525;
     padding: 30px;
 }
-ul {
+nav ul {
     display: flex;
     justify-content: space-around;
 }
@@ -25,6 +25,7 @@ ul li{
     height: 310px;
     display: grid;
     grid-template-columns: 2fr 1fr;
+   
     color:#333333;
 }
 main{
