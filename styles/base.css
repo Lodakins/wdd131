@@ -64,6 +64,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     font-family: var(--paragraph-font);
+    color: #fff;
 }
 
 ol, ul {
@@ -84,11 +85,6 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-body {
-    color: #fff;
-}
-
 header {
     background-color: #363636;
     padding: 50px 0px 0px 0px;
@@ -149,6 +145,7 @@ main {
     color: var(--paragraph-background-color);
     display: flex;
     flex-flow: row nowrap;
+    margin-top: 30px;
 }
 article p{
     font-family: var(--paragraph-font);
@@ -159,10 +156,10 @@ article p{
 .card-body li {
     margin: 20px;
 }
-aside {
-    background-color: #fff;
+.more-info{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-
 footer {
     background: var(--paragraph-color-on-white);
     padding: 20px;
