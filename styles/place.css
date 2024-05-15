@@ -157,4 +157,17 @@ footer p {
   .weather,.data{
     background-color: #fff;
   }
+  .weather-img{
+    display: none;
+  }
+  .weather h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .weather h2::after{
+    display: block;
+    content: url('../images/weather.svg');
+    width: 50px;
+  }
 }
