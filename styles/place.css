@@ -9,7 +9,7 @@ Fonts are separated by a & */
 */
 :root {
     /* change the values below to your colors from your palette */
-    --primary-color: #753213;
+    --primary-color: #381c0f;
     --secondary-color: rgb(161 86 45);
     --accent1-color: rgb(69, 123, 157);
     --accent2-color: #a15e33;
@@ -118,6 +118,7 @@ header h1 {
 }
 .data ul li span,.weather ul li p:not(span){
     font-weight: 600;
+    color: var(--primary-color);
 }
 .weather{
     text-align: center;
