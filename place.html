@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Akinrolabu Lolade">
+    <meta name="description" content="Akinrolabu Lolade, WDD 131 - Dynamic Web Fundamentals, web developer">
+    <title>WDD 131 - Dynamic Web Fundamentals - Akinrolabu Lolade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/place.css">
+    <script src="./scripts/getdates.js" defer></script>
+    <script src="./scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sahara Desert</h1>
+    </header>
+
+    <div class="img-container">
+        <picture>
+            <source srcset="./images/sahara-desert.webp" media="(min-width: 1000px)"  type="image/webp" >
+            <source srcset="./images/sahara-desert-small.webp" media="(max-width: 600px)"  type="image/webp" >
+            <img src="./images/sahara-desert.webp" alt="Sahara Dessert" class="heroimage">
+        </picture>
+    </div>
+
+
+    <main>
+        <section class="data">
+            <h2> Data</h2>
+            <div>
+                <ul>
+                    <li><span>Area:</span> 9.2 million km²</li>
+                    <li><span>Coordinates:</span> 23°N 13°E / 23°N 13°E</li>
+                    <li><span>Width:</span> 1,800 km (1,100 mi)</li>
+                    <li><span>Location:</span> Northern Africa</li>
+                    <li><span>Climate:</span> Hot</li>
+                    <li><span>Sand Dunes:</span> 450m high</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="weather">
+            <h2> Weather</h2>
+            <img src="./images/weather.svg" class="weather-img" >
+            <div>
+                <ul>
+                    <li><p>Temperature: <span id="temp"></span></p></li>
+                    <li><p>Wind: <span id="wind"></span></p></li>
+                    <li><p>Wind Chill: <span id="windchill"></span></p></li>
+                    <li><p>Conditions:: <span id="condition"></span></p></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p> &copy; <span id="currentyear"></span> | Akinrolabu Lolade | Lagos, Nigeria</p>
+        <p> Last Modified: <span id="lastmodified"></span> </p>
+    </footer>
+
+</body>
+
+</html>
