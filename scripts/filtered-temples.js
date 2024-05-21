@@ -117,7 +117,7 @@ temples.forEach((el)=>{
   innerChild+=`
   <div class="temple-card-container">
   <div class="temple-info">
-      <h2 class="temple-name">${el.templeName}</h2>
+      <h3 class="temple-name">${el.templeName}</h3>
       <p><span>LOCATION:</span>${el.location}</p>
       <p><span>DEDICATED:</span> ${el.dedicated}</p>
       <p><span>SIZE:</span> ${el.area}ft<sup>2</sup></p>
@@ -142,7 +142,7 @@ oldMenu.addEventListener('click',(el)=>{
       innerChild+=`
   <div class="temple-card-container">
   <div class="temple-info">
-      <h2 class="temple-name">${el.templeName}</h2>
+      <h3 class="temple-name">${el.templeName}</h3>
       <p><span>LOCATION:</span>${el.location}</p>
       <p><span>DEDICATED:</span> ${el.dedicated}</p>
       <p><span>SIZE:</span> ${el.area}ft<sup>2</sup></p>
@@ -170,7 +170,7 @@ newMenu.addEventListener('click',(el)=>{
       innerChild+=`
   <div class="temple-card-container">
   <div class="temple-info">
-      <h2 class="temple-name">${el.templeName}</h2>
+      <h3 class="temple-name">${el.templeName}</h3>
       <p><span>LOCATION:</span>${el.location}</p>
       <p><span>DEDICATED:</span> ${el.dedicated}</p>
       <p><span>SIZE:</span> ${el.area}ft<sup>2</sup></p>
@@ -196,7 +196,7 @@ largeMenu.addEventListener('click',(el)=>{
       innerChild+=`
   <div class="temple-card-container">
   <div class="temple-info">
-      <h2 class="temple-name">${el.templeName}</h2>
+      <h3 class="temple-name">${el.templeName}</h3>
       <p><span>LOCATION:</span>${el.location}</p>
       <p><span>DEDICATED:</span> ${el.dedicated}</p>
       <p><span>SIZE:</span> ${el.area}ft<sup>2</sup></p>
@@ -223,7 +223,7 @@ smallMenu.addEventListener('click',(el)=>{
       innerChild+=`
   <div class="temple-card-container">
   <div class="temple-info">
-      <h2 class="temple-name">${el.templeName}</h2>
+      <h3 class="temple-name">${el.templeName}</h3>
       <p><span>LOCATION:</span>${el.location}</p>
       <p><span>DEDICATED:</span> ${el.dedicated}</p>
       <p><span>SIZE:</span> ${el.area}ft<sup>2</sup></p>
