@@ -136,10 +136,10 @@ select, input[type="date"],input{
 .rating-cont .star-cont{
     display: flex;
     flex-flow: row nowrap;
-    margin-top: 29px;
+    margin-top: 9px;
 }
 .rating-cont .star-cont input{
-    margin-top: 0px;
+    margin-top: 18px;
 }
 .feature-cont{
     grid-column: 1/3;
