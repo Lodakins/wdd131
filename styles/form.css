@@ -1,0 +1,289 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #1D3557;
+    --secondary-color: #ED6E7A;
+    --accent1-color: rgb(69, 123, 157);
+    --accent2-color: #A8DADC;
+
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Roboto";
+    --paragraph-font: "Merriweather", Helvetica, sans-serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #1d3557;
+    /* headlines on a white background */
+    --headline-color-on-color: white;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: #396E94;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: white;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #1D3557;
+    --nav-link-color: #1D3557;
+    --nav-background-color: #FFFFFf;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #1D3557;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: var(--paragraph-font);
+    color: #1d3557;
+    background: #efefef;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+header {
+    align-items: center;
+    background: var(--paragraph-color-on-white);
+    padding: 5px 0px 0px 0px;
+}
+
+header h1 {
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 30px;
+    color: #fff;
+    padding: 20px;
+}
+
+
+.form-cont{
+    width: 70%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+form{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    box-sizing: border-box;
+}
+
+form div{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.require{
+    color: #8f0101;
+}
+input,select,textarea{
+    border: 1px solid #1d3557
+}
+textarea{
+    margin-top: 15px;
+}
+label,input,select{
+    margin-top: 18px;
+    color: #1d3557;
+}
+select, input[type="date"],input{
+    padding: 15px;
+}
+.rating-cont{
+    display: flex;
+}
+.rating-cont .star-cont{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 29px;
+}
+.rating-cont .star-cont input{
+    margin-top: 0px;
+}
+.feature-cont{
+    grid-column: 1/3;
+}
+.feature-cont .cont{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.review-cont{
+    grid-column: 1/3;
+}
+.btn-cont{
+    grid-column: 1/3;
+}
+.btn{
+    border: 1px solid #1D3557;
+    padding: 23px;
+    width: 100%;
+    background-color: #1d3557;
+    color: #fff;
+    font-size: 18px;
+}
+.temple-cont {
+    margin-top: 50px;
+}
+
+.temple-cont .title {
+    color: #1d3557;
+    font-size: 32px;
+    font-family: var(--heading-font);
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.icon {
+    display: none;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.temple-img {
+    width: 300px;
+    height: 300px;
+}
+
+figcaption {
+    color: #1d3557;
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer {
+    background: #1d3557;
+    padding: 20px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+footer p {
+    text-align: center;
+    margin: 10px;
+}
+span#currentyear,span#lastmodified{
+    color: #fff;
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    header div {
+        grid-row: 1/2;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    header nav {
+        grid-row: 2/3;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .menus{
+        display: none;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-flow: column;
+    }
+
+    nav ul li {
+        margin: 12px 0px;
+    }
+
+    nav ul li a {
+        font-size: 29px;
+    }
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px)  */
+@media (max-width: 991.98px) {
+   
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px)  */
+@media (max-width: 1199.98px) {
+  
+}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    
+}
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
