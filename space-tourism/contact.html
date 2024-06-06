@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Akinrolabu Lolade">
+  <meta name="description" content="A website that provide a virtual feel of the space">
+  <meta name="keywords" content="space, tourism, crew, technology, destination, sun, mars, earth, planet">
+  <title>Space Tourism | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="main-body contact">
+  <header>
+    <div class="logo-cont">
+      <img src="/images/shared/logo.svg" alt="logo" class="logo" loading="lazy">
+    </div>
+    <nav class="menus">
+      <ul>
+        <li><a href="/index.html"><span class="index">00</span> Home</a></li>
+        <li><a href="/destination.html"><span class="index">01</span> Destination</a></li>
+        <li><a href="/crew.html"><span class="index">02</span>Crew</a></li>
+        <li><a href="/contact.html" class="active"><span class="index">03</span>Contact</a></li>
+      </ul>
+    </nav>
+    <div id="toggle-btn">
+      <img src="/images/shared/icon-hamburger.svg" alt="harmburger" id="icon" loading="lazy">
+    </div>
+  </header>
+
+  <main class="space-cont">
+    <div class="space-title">
+      <h1><span class="index">03</span> Contact Us. We love to hear from you</h1>
+   </div>
+
+    <div class="contact-details-cont">
+        <div class="form-cont"> 
+            <h2>Send us a message</h2>
+            <form method="get" action="/review.html">
+                <div class="form-item item-a">
+                    <label for="fullname"> Full Name <span class="require">*</span></label>
+                    <input type="text" name="fullname" id="fullname" required >
+                </div>
+                <div class="form-item item-b">
+                    <label for="email">Email <span class="require">*</span></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-item item item-c purp rating-cont">
+                    <h3 for="reason">Purpose of the Message <span class="require">*</span></h3>
+                    <div class="radios star-cont">
+                     <input type="radio" name="purpose" id="general" required><label for="general">General Inquiry</label> 
+                     <input type="radio" name="purpose" id="reservation" required><label for="reservation">Reservation Inquiry</label>
+                    </div>
+                </div>
+                <div class="form-item item item-d">
+                    <label for="message">Message <span class="require">*</span></label>
+                    <textarea rows="4" name="message" id="message" required></textarea>
+                </div>
+
+                <div class="form-item item item-e subscribe"> 
+                    <input type="checkbox" name="subscribe" id="subscribe" ><label>Please subscribe me to the monthly newsletter</label>
+                </div>
+                
+                <div class="form-item item item-f">
+                    <input type="submit" value="Submit" class="btn-submit" >
+                </div>
+                
+            </form>
+        </div>
+        <div class="contact-cont">
+            <div class="contact-info">
+                <h2> Contact Information</h2>
+
+                <ul>
+                    <li>177 Huntington Ave Ste 170</li>
+                    <li>contact-us@company.com</li>
+                    <li>+1-617-555-0108</li>
+                </ul>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1720703251094!2d3.325725073826464!3d6.499888623439675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8fb36de08683%3A0xe5dd919b6e43353c!2sThe%20Church%20of%20Jesus%20Christ%20of%20Latter-day%20Saints!5e0!3m2!1sen!2sng!4v1712515744555!5m2!1sen!2sng" width="100" height="100" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+  <footer>
+    <p> &copy; <span id="currentyear"></span> | Akinrolabu Lolade | Lagos, Nigeria</p>
+    <p> Last Modified: <span id="lastmodified"></span> </p>
+  </footer>
+
+  </body>
+</html>

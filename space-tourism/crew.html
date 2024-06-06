@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Akinrolabu Lolade">
+  <meta name="description" content="A website that provide a virtual feel of the space">
+  <meta name="keywords" content="space, tourism, crew, technology, destination, sun, mars, earth, planet">
+  <title>Space Tourism | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/index.js" defer></script>
+  <script src="scripts/crew.js" defer></script>
+</head>
+
+<body class="main-body crew">
+  <header>
+    <div class="logo-cont">
+      <img src="/images/shared/logo.svg" alt="logo" class="logo" loading="lazy">
+    </div>
+    <nav class="menus">
+      <ul>
+        <li><a href="/index.html"><span class="index">00</span> Home</a></li>
+        <li><a href="/destination.html"><span class="index">01</span> Destination</a></li>
+        <li><a href="/crew.html" class="active"><span class="index">02</span>Crew</a></li>
+        <li><a href="/contact.html"><span class="index">03</span>Contact</a></li>
+      </ul>
+    </nav>
+    <div id="toggle-btn">
+      <img src="/images/shared/icon-hamburger.svg" alt="harmburger" id="icon" loading="lazy">
+    </div>
+  </header>
+
+    <main class="space-cont">
+      <div class="space-title">
+         <h1><span class="index">02</span> Pick your Crew</h1>
+      </div>
+      <div class="crew-info">
+        <div class="parent-cont-1 crew active">
+          <div class="crew-cont">
+              <div class="crew-details active">
+                <h2 class="crew-title">Flight Engineer</h2>
+                <h3 class="crew-name">Anousheh Ansari</h3>
+                <p class="crew-bio">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.</p>
+              </div>
+          </div>
+          <div class="space-img-cont">
+            <img src="/images/crew/image-anousheh-ansari.png"  alt="space-image"  class="space-image" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+
+  <footer>
+    <p> &copy; <span id="currentyear"></span> | Akinrolabu Lolade | Lagos, Nigeria</p>
+    <p> Last Modified: <span id="lastmodified"></span> </p>
+  </footer>
+
+  </body>
+</html>
