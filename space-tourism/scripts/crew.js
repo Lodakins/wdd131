@@ -4,7 +4,7 @@ const crewCont = document.querySelector(".crew-info");
 let count =1;
 
 async function fetchData(parentCont){
-    const response = await fetch("/scripts/data.json");
+    const response = await fetch("scripts/data.json");
     const data = await response.json();
     
     parentCont.innerHTML="";
