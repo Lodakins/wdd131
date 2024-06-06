@@ -74,17 +74,17 @@
       border-spacing: 0;
   }
   .main-body{
-    background: url("/images/home/background-home-desktop.jpg");
+    background: url("../../space-tourism/images/home/background-home-desktop.jpg");
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
     position: relative;
   }
   .main-body.destination{
-    background: url("/images/destination/background-destination-desktop.jpg");
+    background: url("../../space-tourism/images/destination/background-destination-desktop.jpg");
   }
   .main-body.crew{
-    background: url("/images/crew/background-crew-desktop.jpg");
+    background: url("../../space-tourism/images/crew/background-crew-desktop.jpg");
   }
   .main-body.contact{
     background: url("/images/technology/background-technology-desktop.jpg");
@@ -486,13 +486,13 @@ footer p {
   @media (max-width: 991.98px) {
 
     .main-body{
-      background: url("/images/home/background-home-mobile.jpg");
+      background: url("../../space-tourism/images/home/background-home-mobile.jpg");
     }
     .main-body.crew{
-      background: url("/images/crew/background-crew-mobile.jpg");
+      background: url("../../space-tourism/images/crew/background-crew-mobile.jpg");
     }
     .main-body.contact{
-      background: url("/images/technology/background-technology-mobile.jpg");
+      background: url("../../space-tourism/images/technology/background-technology-mobile.jpg");
     }
     header {
         grid-template-columns: 1fr;
